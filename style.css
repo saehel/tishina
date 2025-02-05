@@ -1,0 +1,95 @@
+
+
+  @font-face {
+    font-family: Truin;
+    src: url(fonts/Truin-Regular.ttf); 
+
+    
+  } h1 {
+    font-family: Truin, 'Truin';
+    font-size: 250%;
+  }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            font-family: Truin;
+            src: url(fonts/Truin-Regular.ttf);
+            background-color: #fff;
+            color: #000;
+        }
+
+        .sidebar {
+            width: 220px;
+            padding: 20px;
+            position: fixed; /* Фиксируем sidebar */
+            left: 100px; /* Отступ слева */
+            top: 0; /* Фиксируем сверху */
+            height: 100vh; /* Полная высота экрана */
+        }
+
+        .sidebar h1 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .sidebar a:hover {
+            font-weight: bold;
+        }
+
+        .content {
+            margin-left: 340px; /* 100px (отступ sidebar) + 220px (ширина sidebar) */
+            flex-grow: 1;
+            max-width: 800px;
+            padding: 40px;
+        }
+
+        .content h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .content img {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        a {
+            text-decoration: none; /* Убираем подчеркивание */
+            color: #928CF6; /* Цвет ссылки */
+        }
+
+        ::selection {
+            background-color: #928CF6; /* Фон выделенного текста */
+            color: #fff; /* Цвет самого текста */
+        }

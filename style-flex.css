@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    flex-direction: row; /* Располагаем sidebar слева, контент справа */
+    font-family: Truin, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+.sidebar {
+    width: 220px;
+    padding: 20px;
+    position: fixed;
+    left: 100px; /* Отступ слева */
+    top: 0;
+    height: 100vh; /* Растягивается по высоте */
+}
+
+.content {
+    flex-grow: 1;
+    margin-left: 340px; /* Учитываем ширину sidebar (220px + 100px отступ) */
+    padding: 40px;
+    max-width: 100%;
+}
+img {
+    max-width: 100%; /* Изображения не выходят за границы */
+    height: auto;
+}
+
+.sidebar {
+    width: 20vw; /* Вместо фиксированных 220px, занимает 20% ширины окна */
+    min-width: 180px; /* Минимальная ширина, чтобы не схлопывался */
+}
+
+.content {
+    width: 75vw; /* Контент занимает 75% ширины */
+    min-width: 320px;
+}
+
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 180px;
+        left: 50px; /* Уменьшаем отступ */
+    }
+    .content {
+        margin-left: 230px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Перестраиваем в колонку */
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative; /* Обычное расположение */
+        left: 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
