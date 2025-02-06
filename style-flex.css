@@ -10,7 +10,7 @@ body {
     width: 220px;
     padding: 20px;
     position: fixed;
-    left: 100px; /* Отступ слева */
+    left: 0px; /* Отступ слева */
     top: 0;
     height: 100vh; /* Растягивается по высоте */
 }
