@@ -8,6 +8,8 @@ h1 {
   font-size: 250%;
 }
 
+p.class2 { font-size: 48px; }
+
 body {
   font-size: 20px;
   display: flex;
@@ -116,6 +118,8 @@ body {
   .content p {
       font-size: 18px;
   }
+
+  
 }
 
 /* Ссылки */
