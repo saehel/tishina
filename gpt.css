@@ -63,14 +63,15 @@ body {
 }
 
 .content p {
-  line-height: 1.6;
+  line-height: 1.4;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .content img {
   width: 100%;
   height: auto;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 /* 📱 Медиа-запросы для адаптивности */
