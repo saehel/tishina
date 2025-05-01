@@ -25,7 +25,7 @@ body {
 }
 
 .sidebar {
-  width: 350px; /* Возвращаю твое значение */
+  width: 280px; /* Возвращаю твое значение */
   padding: 20px;
   position: fixed;
   left: 0; /* Убрал отступ слева */
@@ -51,9 +51,9 @@ body {
 }
 
 .content {
-  margin-left: 350px; /* Ровно по ширине sidebar */
+  margin-left: 300px; /* Ровно по ширине sidebar */
   flex-grow: 1;
-  max-width: 800px;
+  max-width: 1000px;
   padding: 20px;
 }
 
@@ -133,4 +133,83 @@ a {
 ::selection {
   background-color: #928CF6;
   color: #fff;
+}
+
+/* Две колонки */
+.two-columns {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Левая колонка — текст (65%) */
+.left-column {
+  flex-basis: 75%;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Правая колонка — ссылки (35%) */
+.right-column {
+  flex-basis: 25%;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* 📱 Мобильные устройства */
+@media (max-width: 768px) {
+  .two-columns {
+    flex-direction: column;
+  }
+
+  .left-column {
+    order: 1;
+    width: 100%;
+  }
+
+  .right-column {
+    order: 2;
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+
+/* СОЦИАЛЬНЫЕ ССЫЛКИ ИНДЕКС ЭКРАН */
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  /* padding: 20px 0; */
+}
+
+.link-left,
+.link-center,
+.link-right {
+  flex: 1;
+}
+
+.link-center {
+  text-align: center;
+}
+
+.link-left {
+  text-align: left;
+}
+
+.link-right {
+  text-align: right;
+}
+
+/* 📱 Мобильные устройства */
+@media (max-width: 768px) {
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-links a {
+    width: 100%;
+  }
 }
