@@ -241,3 +241,18 @@ a {
     width: 100%;
   }
 }
+
+::selection {
+  background-color: #928CF6;
+  color: #fff;
+}
+
+::-moz-selection {
+  background-color: #928CF6;
+  color: #fff;
+}
+
+::-webkit-selection {
+  background-color: #928CF6;
+  color: #fff;
+}
