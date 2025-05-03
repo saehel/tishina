@@ -24,6 +24,7 @@ body {
   box-sizing: border-box;
 }
 
+
 .sidebar {
   width: 280px; /* Возвращаю твое значение */
   padding: 20px;
@@ -39,15 +40,42 @@ body {
   margin-bottom: 20px;
 }
 
+.sidebar a.logo {
+  color: #000 !important;
+}
+
+/* .sidebar a { 
+  display: block;
+  text-decoration: none;
+  color: rgb(92, 92, 92);
+  margin-bottom: 10px;
+ } */
+
+/* Ссылки в навигации */
 .sidebar a {
   display: block;
   text-decoration: none;
-  color: black;
+  color: #666; /* серый по умолчанию */
   margin-bottom: 10px;
+  transition: color 0.2s ease;
 }
 
+
+/* .sidebar a:hover { */
+  /* font-weight: bold; */
+/* } */
+
+
+/* При наведении — черный, без жирного */
 .sidebar a:hover {
-  font-weight: bold;
+  color: #000;
+  font-weight: normal;
+}
+
+/* Активный пункт (черный) */
+.sidebar a.active {
+  color: #000;
+  font-weight: normal;
 }
 
 .content {
