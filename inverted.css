@@ -1,0 +1,22 @@
+body.inverted {
+  background-color: #000;
+  color: #fff;
+}
+
+body.inverted .sidebar a {
+  color: #fff;
+}
+
+body.inverted .sidebar a:hover {
+  color: #928CF6;
+}
+
+/* Оставляем активную ссылку чёрной */
+body.inverted .sidebar a.active {
+  color: #928CF6;
+}
+
+/* При наведении на активную — голубой */
+body.inverted .sidebar a.active:hover {
+  color: #928CF6;
+}

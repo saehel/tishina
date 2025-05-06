@@ -40,16 +40,12 @@ body {
   margin-bottom: 20px;
 }
 
-.sidebar a.logo {
-  color: #000 !important;
+
+.sidebar a.logo:hover {
+  color: #928CF6; /* Активная тоже становится голубой при наведении */
 }
 
-/* .sidebar a { 
-  display: block;
-  text-decoration: none;
-  color: rgb(92, 92, 92);
-  margin-bottom: 10px;
- } */
+
 
 /* Ссылки в навигации */
 .sidebar a {
@@ -61,22 +57,22 @@ body {
 }
 
 
-/* .sidebar a:hover { */
-  /* font-weight: bold; */
-/* } */
-
-
-/* При наведении — черный, без жирного */
+/* При наведении — голубой*/
 .sidebar a:hover {
   color: #928CF6;
   font-weight: normal;
 }
 
-/* Активный пункт (черный) */
+/* Активный пункт (голубой) */
 .sidebar a.active {
   color: #928CF6;
   font-weight: normal;
 }
+
+/* .sidebar a:hover { */
+  /* font-weight: bold; */
+/* } */
+
 
 .content {
   margin-left: 300px; /* Ровно по ширине sidebar */
