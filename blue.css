@@ -1,0 +1,254 @@
+@font-face {
+  font-family: Truin;
+  src: url(fonts/Truin-Regular.ttf);
+}
+
+h1 {
+  font-family: Truin, 'Truin', sans-serif;
+  font-size: 250%;
+}
+
+p.class2 { font-size: 48px; }
+
+body {
+  font-size: 20px;
+  display: flex;
+  font-family: Truin, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.sidebar {
+  width: 280px; /* Возвращаю твое значение */
+  padding: 20px;
+  position: fixed;
+  left: 0; /* Убрал отступ слева */
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar h1 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Активная тоже становится голубой при наведении */
+.sidebar a.logo:hover {
+  color: #5c55e6; 
+}
+
+
+
+/* Ссылки в навигации */
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  color: #000000; /* серый по умолчанию */
+  margin-bottom: 10px;
+  transition: color 0.2s ease;
+}
+
+
+/* При наведении — голубой*/
+.sidebar a:hover {
+  color: #5c55e6;
+  font-weight: normal;
+}
+
+/* Активный пункт (голубой) */
+.sidebar a.active {
+  color: #5c55e6;
+  font-weight: normal;
+}
+
+/* .sidebar a:hover { */
+  /* font-weight: bold; */
+/* } */
+
+
+.content {
+  margin-left: 300px; /* Ровно по ширине sidebar */
+  flex-grow: 1;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  line-height: 1.4;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content img {
+  width: 100%;
+  height: auto;
+  margin-top: 0px;
+}
+
+/* 📱 Медиа-запросы для адаптивности */
+
+/* Планшеты (от 768px до 1024px) */
+@media (max-width: 1024px) {
+  .sidebar {
+      width: 280px; /* Немного сузим sidebar */
+  }
+
+  .content {
+      margin-left: 280px; /* Подстраиваем отступ */
+      padding: 20px;
+  }
+}
+
+/* Мобильные устройства (до 768px) */
+@media (max-width: 768px) {
+  body {
+      flex-direction: column;
+  }
+
+  .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      text-align: center;
+      padding: 15px;
+  }
+
+  .content {
+      margin-left: 0;
+      width: 100%;
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 200%;
+  }
+
+  .content h2 {
+      font-size: 20px;
+  }
+
+  .content p {
+      font-size: 18px;
+  }
+
+  
+}
+
+/* Ссылки */
+a {
+  text-decoration: none;
+  color: #5c55e6;
+}
+
+/* Выделение текста */
+::selection {
+  background-color: #5c55e6;
+  color: #fff;
+}
+
+/* Две колонки */
+.two-columns {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Левая колонка — текст (65%) */
+.left-column {
+  flex-basis: 75%;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Правая колонка — ссылки (35%) */
+.right-column {
+  flex-basis: 25%;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* 📱 Мобильные устройства */
+@media (max-width: 768px) {
+  .two-columns {
+    flex-direction: column;
+  }
+
+  .left-column {
+    order: 1;
+    width: 100%;
+  }
+
+  .right-column {
+    order: 2;
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+
+/* СОЦИАЛЬНЫЕ ССЫЛКИ ИНДЕКС ЭКРАН */
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  /* padding: 20px 0; */
+}
+
+.link-left,
+.link-center,
+.link-right {
+  flex: 1;
+}
+
+.link-center {
+  text-align: center;
+}
+
+.link-left {
+  text-align: left;
+}
+
+.link-right {
+  text-align: right;
+}
+
+/* 📱 Мобильные устройства */
+@media (max-width: 768px) {
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-links a {
+    width: 100%;
+  }
+}
+
+::selection {
+  background-color: #5c55e6;
+  color: #fff;
+}
+
+::-moz-selection {
+  background-color: #5c55e6;
+  color: #fff;
+}
+
+::-webkit-selection {
+  background-color: #5c55e6;
+  color: #fff;
+}
