@@ -252,3 +252,21 @@ a {
   background-color: #5c55e6;
   color: #fff;
 }
+
+
+/* ✏️ новый блок для адаптивных iframes Sketchfab */
+.sketchfab-embed-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 соотношение */
+  overflow: hidden;
+}
+
+.sketchfab-embed-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
