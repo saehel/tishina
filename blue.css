@@ -270,3 +270,10 @@ a {
   height: 100%;
   border: none;
 }
+
+
+
+html, body {
+  overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
+}
