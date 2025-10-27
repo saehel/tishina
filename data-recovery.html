@@ -6,7 +6,9 @@
     <title>Восстановление Данных</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="gpt.css">
+    <link rel="stylesheet" href="inverted-recovery.css">
     <link rel="icon" type="image/png" href="img/favicon3.png">
+    
 </head>
 <body>
     <nav class="sidebar"> 
@@ -28,18 +30,62 @@
           </p>
     </nav>
     <main class="content">
-        <img src="img/data recovery/0.png" alt="data-recovery" width="100%"/> <br>
-        <img src="img/data recovery/01.png" alt="data-recovery" width="100%"/> <br>
+        <img src="img/data recovery/nebo.jpg" alt="">
+        <img src="img/data recovery/nebo crop.jpg" alt="">
+        <img src="img/data recovery/rama light.jpg" alt="">
+        <img src="img/data recovery/transparent.jpg" alt="">
+        <img src="img/data recovery/altar crop 2.jpg" alt="">
+        <!-- <img src="img/data recovery/sleep.jpg" alt=""> -->
+        
+        <div style="display: flex; gap: 5px; margin-bottom: 5px">
+            <img src="img/data recovery/altar dark.jpg" alt="sphere poster" style="width: calc(50% - 2.5px);">
+            <img src="img/data recovery/altar dark details.jpg" alt="sphere poster" style="width: calc(50% - 2.5px);">
+        </div>
+
+        <img src="img/data recovery/text.png" alt="">
+        <img src="img/data recovery/sleep2.png" alt="">
+        <!-- <img src="img/data recovery/isparitel 2.jpg" alt=""> -->
+        <!-- <img src="img/data recovery/rose.jpg" alt=""> -->
+        <!-- <img src="img/data recovery/rose w text.png" alt=""> -->
+        <img src="img/data recovery/part of matrix2.png" alt="">
+        <img src="img/data recovery/altar.jpg" alt="">
+        <img src="img/data recovery/credits.png" alt="">
         <!-- Алтари из металла и кибернетики, забытых атрибутов и осколков артефактов. 
         Молитвы — звуки машинных кодов и алгоритмов, симфонии из электронных импульсов. 
         Воскрешение технологической души, живущей в глубинах машин.-->
-        <img src="img/data recovery/1.png" alt="data-recovery" width="100%"/> <br>
-        <img src="img/data recovery/3.png" alt="data-recovery" width="100%"/> <br>
-        <img src="img/data recovery/2.png" alt="data-recovery" width="100%"/> <br>
-        <img src="img/data recovery/4.png" alt="data-recovery" width="100%"/> <br>
         <br>
-        2023
+        <!-- <div class="footer">2023</div> -->
     </main>
            
+
+
+   <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const triggerImage = document.querySelector('img[src="img/data recovery/altar crop 2.jpg"]');
+
+    if (!triggerImage) {
+        console.warn("Не найдено изображение-триггер.");
+        return;
+    }
+
+    const updateTheme = () => {
+        const triggerTop = triggerImage.getBoundingClientRect().top + window.scrollY;
+        const scrollY = window.scrollY;
+
+        if (scrollY >= triggerTop) {
+            // Прокрутили ниже изображения — включаем тёмную тему
+            document.body.classList.add('inverted');
+        } else {
+            // Выше изображения — светлая тема
+            document.body.classList.remove('inverted');
+        }
+    };
+
+    // Вызываем при загрузке и при скролле
+    updateTheme();
+    window.addEventListener('scroll', updateTheme);
+});
+</script>
+
 </body>
 </html>
