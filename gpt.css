@@ -26,10 +26,10 @@ body {
 
 
 .sidebar {
-  width: 280px; /* Возвращаю твое значение */
+  width: 280px;
   padding: 20px;
   position: fixed;
-  left: 0; /* Убрал отступ слева */
+  left: 0;
   top: 0;
   height: 100vh;
 }
@@ -69,16 +69,11 @@ body {
   font-weight: normal;
 }
 
-/* .sidebar a:hover { */
-  /* font-weight: bold; */
-/* } */
-
-
 .content {
   margin-left: 300px; /* Ровно по ширине sidebar */
   flex-grow: 1;
   max-width: 1000px;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .content h2 {
@@ -98,9 +93,9 @@ body {
   margin-top: 0px;
 }
 
-/* 📱 Медиа-запросы для адаптивности */
 
-/* Планшеты (от 768px до 1024px) */
+
+/* АДАПТИВНОСТЬ Планшеты (от 768px до 1024px) */
 @media (max-width: 1024px) {
   .sidebar {
       width: 280px; /* Немного сузим sidebar */
