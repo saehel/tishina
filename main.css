@@ -247,3 +247,9 @@ a {
   background-color: #928CF6;
   color: #fff;
 }
+
+@media (max-width: 1024px) {
+    .content > p.class2 {
+        display: none;
+    }
+}
